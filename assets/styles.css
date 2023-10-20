@@ -29,7 +29,7 @@ h1 {
 
 .container {
     background-color: var(--white);
-    height: 60vh;
+    /* height: 60vh; */
     display: flex;
     flex-direction: column;
     border-top-right-radius: 15px;
@@ -42,8 +42,38 @@ h1 {
     flex-direction: column;
 }
 
+.percent--values {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: .75em;
+    margin: .5em auto;
+}
+
+.percent label {
+    background-color: var(--very-dark-cyan);
+    color: var(--white);
+    padding: .5em 1.75em;
+    border-radius: 5px;
+    text-align: center;
+}
+
+label[for="custom"] {
+    background-color: var(--light-grayish-cyan);
+    color: var(--dark-grayish-cyan);
+}
+
+label[for="bill"], label[for="numPeople"], h2 {
+    color: var(--dark-grayish-cyan);
+    margin: .75em 0;
+}
+
 .bill-results {
     background-color: var(--very-dark-cyan);
     padding: 1.5em;
     border-radius: 15px;
+}
+
+.percent input {
+    display: none;
 }
