@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tip Calculator</title>
-    <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/styles.css">
-</head>
-<body>
-    <h1>SPLI</h1>
-    <h1>TTER</h1>
-    <div class="container">
-        <div class="bill-info">
-            <label for="bill">Bill</label>
-            <input type="number" id="bill">
-            
-            <div class="percent">
-                <h2>Select Tip %</h2>
-                <div class="percent--values">
-                    <label for="pc5">5%</label>
-                    <input type="radio" id="pc5">
-                    <label for="pc10">10%</label>
-                    <input type="radio" id="pc10">
-                    <label for="pc15">15%</label>
-                    <input type="radio" id="pc15">
-                    <label for="pc25">25%</label>
-                    <input type="radio" id="pc25">
-                    <label for="pc50">50%</label>
-                    <input type="radio" id="pc50">
-                    <label for="custom">Custom</label>
-                    <input type="radio" id="custom">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tip Calculator</title>
+        <link rel="stylesheet" href="assets/reset.css">
+        <link rel="stylesheet" href="assets/styles.css">
+    </head>
+    <body>
+        <h1>SPLI</h1>
+        <h1>TTER</h1>
+        <div class="container">
+            <div class="bill-info">
+                <label for="bill">Bill</label>
+                <input type="number" id="bill">
+                
+                <div class="percent">
+                    <h2>Select Tip %</h2>
+                    <div class="percent--values">
+                        <label for="pc5">5%</label>
+                        <input type="radio" id="pc5">
+                        <label for="pc10">10%</label>
+                        <input type="radio" id="pc10">
+                        <label for="pc15">15%</label>
+                        <input type="radio" id="pc15">
+                        <label for="pc25">25%</label>
+                        <input type="radio" id="pc25">
+                        <label for="pc50">50%</label>
+                        <input type="radio" id="pc50">
+                        <label for="custom">Custom</label>
+                        <input type="radio" id="custom">
+                    </div>
                 </div>
+
+                <label for="numPeople">Number of People</label>
+                <input type="number" id="numPeople">
             </div>
+            <div class="bill-results">
+                
+                <h2 class="tip">Tip Amount</h2> 
+                <p class="tip-person">/ person</p>
+                <p class="tip-value">$0.00</p>
+                
+                <h2 class="total">Total</h2> 
+                <p class="total-person">/ person </p>       
+                <p class="total-value">$0.00</p>
 
-            <label for="numPeople">Number of People</label>
-            <input type="number" id="numPeople">
+                <button type="reset" class="btn-reset">Reset</button>
+            </div>
         </div>
-        <div class="bill-results">
-            <h2>Tip Amount</h2> <span>$0.00</span>
-            <p>/ person</p>
-            <h2>Total</h2> <span>$0.00</span>
-            <p>/ person</p>
-
-            <button type="reset">Reset</button>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
