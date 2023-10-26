@@ -25,7 +25,7 @@ body {
 
 h1 {
     text-align: center;
-    margin: 0.75em 0;
+    margin: 2.5em 0;
     color: var(--very-dark-cyan);
 }
 
@@ -36,6 +36,8 @@ h1 {
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     padding: 1.5em;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .bill-info {
@@ -57,6 +59,11 @@ h1 {
     padding: .5em 1.75em;
     border-radius: 5px;
     text-align: center;
+}
+
+.percent label:hover {
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
 }
 
 input[type="number"] {
@@ -92,7 +99,6 @@ label[for="bill"], label[for="numPeople"] {
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: repeat(5, auto);
-    /* grid-gap: .25em; */
 }
 
 .tip {
@@ -151,4 +157,24 @@ label[for="bill"], label[for="numPeople"] {
 
 .percent input {
     display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+        max-width:none;
+        width: 80vw;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+
+    .percent--values {
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .bill-results {
+        min-width: 40%;
+    }
 }
