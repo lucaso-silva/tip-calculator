@@ -59,9 +59,15 @@ h1 {
     padding: .5em 1.75em;
     border-radius: 5px;
     text-align: center;
+    cursor: pointer;
 }
 
 .percent label:hover {
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+}
+
+input[type="radio"]:checked+label {
     background-color: var(--strong-cyan);
     color: var(--very-dark-cyan);
 }
