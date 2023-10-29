@@ -2,7 +2,7 @@
 
 const inputBill = document.getElementById("bill");
 const inputNumPeople = document.getElementById("numPeople");
-const percentValues = document.querySelectorAll(".percent");
+const percentValues = document.querySelectorAll(".pValue");
 
 
 inputBill.addEventListener("blur", ()=> {
@@ -13,8 +13,14 @@ inputBill.addEventListener("blur", ()=> {
 inputNumPeople.addEventListener("blur", ()=> {
     let numPeople = inputNumPeople.value;
     console.log(numPeople);
-});
+});''
 
-percentValues.forEach((pValue)=> console.log(pValue.id));
+for(let i = 0; i < percentValues.length; i++) {
+    percentValues[i].addEventListener("input", ()=>{
+        calculateTip(percentValues[i].id);
+    })
+}
 
-
+function calculateTip(percId) {
+    console.log(percId);
+}
